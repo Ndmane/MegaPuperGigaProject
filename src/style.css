@@ -10,10 +10,14 @@
 }
 
 .navbar ul {
-    display:flex;
-    flex-direction: row;
-    list-style: none;
-    margin: 0;
+	position: absolute;
+	background: radial-gradient(circle at top left, rgb(235, 224, • 142), rgb (161, 222, 225), rgb(80, 173, 224)) ;
+	flex-direction: column;
+	width: 30%;
+	height: auto;
+	top: 68px;
+	left: -40%
+    z-index: 2;
 }
 
 .navbar img {
@@ -21,20 +25,44 @@
 }
 
 .navbar ul li {
-    display: flex;
-    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .navbar ul li:hover {
-    background-color: #7cc6e5;
-    border-radius: 20%;
+    background-color: black;
+	transform: scale(1.07);
+	transition: 0.4s ease;
+	border-radius: 5%;
+    color: white;
+}
+
+.navbar ul li:nth-child(1) {
+	margin-top:20px;
 }
 
 .navbar ul li a {
-    text-decoration: none;
-    color: black;
-    margin: auto;
+    margin-left: 0;
+	font-size: 1. 2rem;
 }
+
+.navbar.open ul {
+	transform: translateX (100%);
+	transition: 0.7s ease-in-out;
+}
+
+.navbar.open .burger span:nth-child(1) {
+	transform: translateY(0) rotate(45deg);
+}
+
+.navbar.open.burger span:nth-child(2) {
+	opacity: 0;
+}
+
+.navbar.open burger span:nth-child(3) {
+	transform: translateY(0) rotate(-45deg);
+}
+
+
 
 .navbar div {
     display:flex;
@@ -275,4 +303,35 @@ footer a {
         height: 200px;
         margin: auto;
     }
+}
+
+.burger {
+	display: none;
+}
+
+.burger {
+	display: block;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	margin-left: 20px;
+	margin-right: 5px;
+}
+
+.burger spanf {
+	position: absolute;
+	width: 30px;
+	left: -5px;
+	height: -3px;
+	background-color: black;
+	bottom: 20px;
+}
+
+.burger span:nth-child(1) {
+	transform: translateY(-10px);
+}
+
+.burger span:nth-child(3) {
+	transform: translateY(10px);
 }
