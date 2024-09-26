@@ -259,56 +259,50 @@ footer a {
     }
     
     .burger {
-        display: block; /* Отображение элемента как блочный элемент */
-        position: relative; /* Относительное позиционирование для внутренних элементов */
-        width: 40px; /* Ширина контейнера */
-        height: 40px; /* Высота контейнера */
-        margin: auto; /* Автоматические отступы по бокам для центрирования */
-        margin-left: 20px; /* Отступ слева */
-        margin-right: 5px; /* Отступ справа */
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        margin-left: 20px;
+        margin-right: 5px;
     }
     
-    /* Стили для полосок внутри бургер-меню */
     .burger span {
-        position: absolute; /* Абсолютное позиционирование для расположения полосок внутри контейнера */
-        width: 30px; /* Ширина каждой полоски */
-        left: 5px; /* Отступ от левого края контейнера */
-        height: 3px; /* Высота полоски */
-        background-color: black; /* Цвет полоски */
-        bottom: 20px; /* Расположение полоски от нижнего края контейнера */
+        position: absolute;
+        width: 30px;
+        left: 5px;
+        height: 3px;
+        background-color: black;
+        bottom: 20px;
     }
     
-    /* Стили для первой полоски бургер-меню */
     .burger span:nth-child(1) {
-        transform: translateY(-10px); /* Перемещение первой полоски вверх на 10px */
+        transform: translateY(-10px);
     }
     
-    /* Стили для третьей полоски бургер-меню */
     .burger span:nth-child(3) {
-        transform: translateY(10px); /* Перемещение третьей полоски вниз на 10px */
+        transform: translateY(10px);
     }
     
     .navbar ul {
-        position: absolute; /* Абсолютное позиционирование относительно ближайшего позиционированного предка, в нашем случае экрана. */
-        background: radial-gradient(circle at top left, rgb(235, 224, 142), rgb(161, 222, 225), rgb(80, 173, 224)); /* Радужный градиентный фон от верхнего левого угла */
-        flex-direction: column; /* Элементы списка будут выстраиваться вертикально (необходимо для флекс-контейнера) */
-        width: 30%; /* Ширина списка равна 30% от ширины родительского элемента */
-        height: auto; /* Высота автоматически подстраивается под содержимое */
-        top: 68px; /* Расположение списка на 68px ниже от верхнего края родительского элемента */
-        left: -40%; /* Расположение списка на 40% ширины родительского элемента слева (вне видимой области) */
-        z-index: 2; /* Уровень стека элемента, чтобы он перекрывал другие элементы с меньшим z-index */
+        position: absolute;
+        background: radial-gradient(circle at top left, rgb(235, 224, 142), rgb(161, 222, 225), rgb(80, 173, 224));
+        width: 30%;
+        height: auto;
+        top: 68px;
+        left: -40%;
+        z-index: 2;
     }
     
-    /* Стили для элементов списка внутри навигационного меню */
     .navbar ul li {
-        margin-top: 10px; /* Отступ сверху для элементов списка */
+        margin-top: 10px;
     }
     
-    /* Стили для элемента списка при наведении */
     .navbar ul li:hover {
-        background-color: black; /* Цвет фона элемента становится черным при наведении */
-        transform: scale(1.07); /* Увеличение размера элемента на 7% при наведении */
-        transition: 0.3s ease; /* Добавление плавного перехода */
+        background-color: black;
+        transform: scale(1.07);
+        transition: 0.3s ease;
     }
 }
 
@@ -387,3 +381,53 @@ footer a {
     color: black;
 }
 
+.form {
+    flex-direction: column;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.form form fieldset input {
+    margin-bottom: 10px;
+}
+
+.form form fieldset legend {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form form button {
+    width: 200px;
+    font-size: 1.2rem;
+    background-color: #24779b;
+    color: white;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.form form button:hover {
+    font-size: 1.2rem;
+    background-color: #91130c;
+    color: rgb(248, 243, 243);
+}
+
+.form form fieldset {
+    width: 65%;
+}
+
+.form form fieldset {
+    width: 80%;
+}
