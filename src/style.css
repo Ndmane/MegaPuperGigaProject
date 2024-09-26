@@ -323,4 +323,67 @@ footer a {
     }
 }
 
+.navbar ul .work {
+    position: relative;
+    display: flex;
+    z-index: 10;
+}
+
+.navbar ul .work ul {
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    top: 100%;
+    width: 100px;
+    display: none;
+    padding: 0;
+    z-index: 20;
+}
+
+.navbar ul .work ul li {
+    z-index: 20;
+    background-color: #7cc6e5;
+    margin-bottom: 2px;
+}
+
+.navbar ul .work:hover ul {
+    display: block;
+}
+
+.navbar ul .work ul li:hover {
+    background-color: white;
+    border-radius: 0;
+}
+
+.navbar ul .work ul {
+    position: absolute;
+    flex-direction: column;
+    left: 10px;
+    top: 0;
+    width: 100px;
+    display: none;
+    padding: 0;
+    z-index: 20;
+}
+
+.navbar ul .work ul li {
+    margin-top: 0;
+    margin-bottom: 10px;
+    background-color: unset;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    color: black;
+}
+
+.navbar ul .work ul li:hover {
+    background-color: black;
+}
+
+.navbar ul .work ul li:hover a:hover {
+    color: white;
+}
+
+.navbar ul .work:hover ul li a {
+    color: black;
+}
 
