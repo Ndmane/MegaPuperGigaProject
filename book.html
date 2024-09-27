@@ -7,16 +7,32 @@
     <title>Book</title>
 </head>
 <body>
-    <nav class = "navbar">
-        <img src = "./src/public/photo_53_2024-09-12_00-46-35.jpg" width = 70 height = 70 alt = "logo">
+    <nav class="navbar open">
+        <img src="./src/public/photo_53_2024-09-12_00-46-35.jpg" width="60" height="60" alt="Logo" title="Logo">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="video.html">Video</a></li>
             <li><a href="audio.html">Music</a></li>
             <li><a href="book.html">Book</a></li>
+            <li class="work"><a href="#">Work &bigtriangledown;</a>
+                <ul>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="math.html">Math</a></li>
+                    <li><a href="api.html">API</a></li>
+                </ul>
+            </li>
         </ul>
-        <div><a href = "https://ku.edu.kz">Entry</a></div>
+        <div><a href="https://ku.edu.kz/" target="_blank">Entry</a>
+        
+        <div class = "burger" id = "burger2">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        </div>
     </nav>
+    
 <main>
     <section>
         <img src ="./src/public/cover1_68_16.jpg" width = 600 height = 400>
@@ -53,5 +69,11 @@
             ried out. </p>
         </section>
 </main>  
+<footer>
+        <a href="https://www.facebook.com/Cristiano/" target="_blank"><img src="./src/public/facebook.png" width="60" height="60" alt="Facebook" title="Cristiano's Facebook"></a>
+        <a href="https://www.instagram.com/cristiano/" target="_blank"><img src="./src/public/instagram.jpg" width="60" height="60" alt="Instagram" title="Cristiano's Instagram"></a>
+        <a href="https://www.youtube.com/@cristiano" target="_blank"><img src="./src/public/youtube.png" width="60" height="60" alt="YouTube" title="Cristiano's YouTube Channel"></a>
+    </footer>
+    <script src = "./js/script.js"></script>
 </body>
 </html>
